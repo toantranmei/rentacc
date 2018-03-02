@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position:relative;
+  min-height:100%;
+}
+
+body {
+    background: #333;
+    overflow-x: hidden;
+    margin-bottom: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* LIBRARY FOR SKY ALBERT WEBSITE TO DO */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+      float: left;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+}
+
+/* LIBRARY FOR SKY ALBERT WEBSITE TO DO */
+
+
+@font-face {
+  font-family:"iCielFesterSemiCondensed-Bold";
+  font-style:normal;
+  font-weight:normal;
+  src: url("/fonts/iCielFesterSemiCondensed-Bold.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/iCielFesterSemiCondensed-Bold.woff") format("woff"),
+       url("/fonts/iCielFesterSemiCondensed-Bold.ttf") format("truetype"),
+       url("/fonts/iCielFesterSemiCondensed-Bold.svg#iCielFesterSemiCondensed-Bold") format("svg");
+}
+
+@font-face {
+  font-family:"SegoeUI-SemiBold";
+  font-style:normal;
+  font-weight:normal;
+  src: url("/fonts/SegoeUI-SemiBold.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/SegoeUI-SemiBold.woff") format("woff"),
+       url("/fonts/SegoeUI-SemiBold.ttf") format("truetype"),
+       url("/fonts/SegoeUI-SemiBold.svg#SegoeUI-SemiBold") format("svg");
+}
+
+/* CSS FOR HEADER */
+
+#header {
+  font-family: iCielFesterSemiCondensed-Bold;
+  background-color: #333;
+  color: rgba(255,255,255,.4);
+  position: relative;
+  height: 60px;
+}
+
+#header .navbar-main {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#header .container {
+  position: relative;
+  height: 60px;
+}
+
+.navbar-main {
+  width: auto;
+  box-shadow: none;
+  margin: 0;
+}
+
+.navbar-left {
+  float: left;
+  margin: 0;
+}
+
+.navbar-left>li, .navbar-right>li {
+  display: block;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+.navbar-left>li>a, .navbar-right>li>a {
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+}
+
+.navbar-left li a, .navbar-right li a {
+  color: #999;
+  font-weight: 700;
+  height: 60px;
+  line-height: 38px;
+  font-size: 13pt;
+}
+
+.logo-big img {
+  position: absolute;
+  left: 50%;
+  margin-left: -88px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar-right {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  float: left;
+  margin: 0;
+}
+
+
+/* CSS FOR BANNER */
+
+#banner {
+  height: 435px;
+  position: relative;
+  border-top: 1px solid #2b2b2b;
+  margin-top: -20px;
+  z-index: 0;
+  background: url('../img/banner/banner_header.jpg') no-repeat center #131313;
+  background-size: 1100px 435px;
+  overflow: hidden;
+}
+
+.wall-website::before {
+  background: url('../img/banner/background_layer.png') no-repeat center;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.wall-website {
+  width: 100%;
+  text-align: center;
+}
+
+.wall-container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 435px;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInUp {
+    animation-name: slideInUp;
+}
+
+.wall-container .icon-image {
+    margin: 95px 0 5px 0;
+    max-height: 230px;
+    cursor: pointer;
+}
+
+.wall-website h1 {
+    color: #f7cf0c;
+    font-weight: bold;
+    font-family: 'iCielFesterSemiCondensed-Bold';
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/* CSS FOR CONTENT */
+
+#content {
+  margin-top: 30px;
+}
+
+.wrap-container {
+  position: relative;
+}
+
+.wrap-container .menu_top {
+    color: #f7cf0c;
+    font-size: 17px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.wrap-container .menu_top .right {
+    float: right;
+    margin-right: 15px;
+}
+
+.wrap-container .menu_top .right ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wrap-container .menu_top .right ul li {
+    border: 1px solid #f7cf0c;
+    float: left;
+    padding: 10px 20px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: #f7cf0c;
+    font-weight: 700;
+    font-family: iCielFesterSemiCondensed-Bold;
+    line-height: 1.42857143;
+}
+
+.wrap-container .menu_top .right ul li.active {
+    background-color: #f7cf0c;
+    color: #333;
+}
+
+.wrap-container .menu-left {
+    font-family: SegoeUI-SemiBold;
+    position: relative;
+    top: -70px;
+}
+
+.wrap-container .menu-left .search_form {
+    border: 1px solid #ffffff;
+    width: 100%;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    height: 39px;
+    color: #ffffff;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+.wrap-container .menu-left .search_form input::placeholder {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.wrap-container .menu-left .search_form svg {
+  font-size: 13px;
+}
+
+.wrap-container .menu-left .search_form input {
+    font-family: Arial;
+    background: transparent;
+    border: none;
+    line-height: 39px;
+    padding: 0 10px;
+    width: 91%;
+    color: #f7cf0c;
+    outline: none;
+}
+
+.wrap-container .menu-left h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #dddddd;
+}
+
+.wrap-container .menu-left ul {
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+
+.wrap-container .menu-left ul.select_first li {
+    position: relative;
+    line-height: 25px;
+    color: #f7cf0c;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 100%;
+    clear: both;
+}
+
+.wrap-container .menu-left ul.select_first b {
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.wrap-container .menu-left ul.playerduo li {
+    margin: 5px 0 15px 0;
+    clear: both;
+    height: 70px;
+}
+
+.wrap-container .menu-left ul.playerduo .thumb {
+    position: relative;
+}
+
+.wrap-container .menu-left ul.playerduo .player-avt {
+    width: 51px;
+    float: left;
+    margin-right: 7px;
+    border-radius: 6px;
+}
+
+.wrap-container .menu-left ul.playerduo .thumb .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+}
+
+.wrap-container .menu-left ul.playerduo .info {
+    color: #fff;
+    line-height: 13px;
+    width: 100%;
+}
+
+.wrap-container .menu-left ul.playerduo h3 {
+    font-size: 15px;
+    margin: 0 0 10px 0;
+    text-transform: none;
+    font-family: inherit;
+    color: #f7cf0c;
+}
+
+.wrap-container .menu-left ul.playerduo p {
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+.wrap-container .menu-left ul.playerduo p {
+    margin: 0 0 10px;
+    font-size: 13px;
+}
+
+.wrap-container .menu-left ul.playerduo p:last-child {
+    float: right;
+}
