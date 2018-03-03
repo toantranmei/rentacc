@@ -26,12 +26,26 @@ a {
   margin-left: auto;
 }
 
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
 {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -129,6 +143,11 @@ a {
   height: 60px;
   line-height: 38px;
   font-size: 13pt;
+}
+
+.navbar-left li a:hover, .navbar-right li a:hover {
+  color: #fff;
+  background: rgba(0,0,0,.2);
 }
 
 .logo-big img {
@@ -331,6 +350,10 @@ a {
     clear: both;
 }
 
+.wrap-container .menu-left ul li:hover {
+    color: #e14938;
+}
+
 .wrap-container .menu-left ul.select_first b {
     color: white;
     font-size: 13px;
@@ -388,4 +411,213 @@ a {
 
 .wrap-container .menu-left ul.playerduo p:last-child {
     float: right;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    border-radius: 3px;
+    color: rgba(0,0,0,0.87);
+    background: #fff;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card .card-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.card .card-detail {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.7);
+    font-family: sans-serif;
+}
+
+.card .card-detail h3 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 10pt;
+    margin-top: 1px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "iCielFesterSemiCondensed-Bold",Arial;
+    margin-bottom: 10px;
+}
+
+.card .card-detail h3 a {
+    color: #f7cf0c;
+}
+
+.card .card-detail .fa-facebook-square {
+    color: #f7cf0c;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.card:hover .card-detail {
+    display: block;
+}
+
+.card .card-detail p {
+    position: relative;
+    font-size: 9.5pt;
+    z-index: 1;
+    line-height: 20px;
+    color: white;
+    margin: 0 0 10px;
+}
+
+.card .card-block {
+    overflow: hidden;
+}
+
+.card .card-block .card-title {
+    font-family: iCielFesterSemiCondensed-Bold;
+    color: #e14938;
+    font-size: 13pt;
+    text-align: center;
+    padding: 4px 10px 5px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 33px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.card .card-block .card-control {
+    color: #333;
+    padding: 0 10px 35px;
+    font-family: iCielFesterSemiCondensed-Bold;
+}
+
+.card .card-block .card-control .left select {
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 26px;
+    padding: 0 6px;
+    width: 170px;
+    font-weight: 700;
+    font-size: 10pt;
+    font-family: Arial;
+}
+
+.card .card-block .card-control .right button {
+    background-color: #333;
+    border: none;
+    height: 26px;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    width: 60px;
+    padding-top: 6px;
+}
+
+.end {
+    color: #fff;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 13pt;
+    font-family: SegoeUI-SemiBold;
+}
+
+
+/*******************************************
+****** GUIDE PAGE
+****** CSS FOR SKY ALBERT
+****** DATE: 03/03/2018
+*******************************************/
+
+.guide-page {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+.wrap-container .content.guide {
+    color: #dddddd;
+}
+
+.wrap-container .content.guide h3 {
+    font-family: "iCielFesterSemiCondensed-Bold",Arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 2px solid;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/*******************************************
+****** LOGIN PAGE
+****** CSS FOR SKY ALBERT
+****** DATE: 03/03/2018
+*******************************************/
+
+.content.login_page h3 {
+    color: #f7cf0c;
+    font-size: 29px;
+    border-bottom: 5px solid;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content.login_page button {
+    font-family: "iCielFesterSemiCondensed-Bold", Arial;
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin: 20px 0;
+    border-radius: 3px;
+    background-color: #e14938;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+.content.login_page p {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 15px;
+    margin-top: 5px;
+    margin: 0 0 10px;
+}
+
+.content.login_page input {
+    width: 100%;
+    outline: none;
+    margin-top: 20px;
+    height: 40px;
+    text-align: center;
+    color: #333;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    font-family: Arial;
 }
